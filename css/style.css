@@ -386,6 +386,8 @@
 }
 
 .project-list {
+    display: flex;
+    flex-wrap: wrap;
     gap: 50px;
 }
 
@@ -393,7 +395,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    position: relative;
+    width: calc(50% - 25px);
 }
 
 .project-image {
@@ -418,6 +420,7 @@
     line-height: 150%;
     color: #4d5053;
 }
+
 
 .stats {
     background-color: #F4F0EC;
@@ -479,20 +482,26 @@
 }
 
 .blog-list {
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .blog-item {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 45px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: calc(33.333% - 20px);
 }
+
 
 .blog-image {
     width: 100%;
     height: 260px;
     object-fit: cover;
-    border-radius: 45px 0 45px 0;
 }
 
 .blog-name {
@@ -500,8 +509,8 @@
     font-weight: 400;
     font-size: 25px;
     line-height: 140%;
-    letter-spacing: 0.02em;
     color: #292f36;
+    padding: 0 25px;
 }
 
 .blog-date {
@@ -510,6 +519,7 @@
     font-size: 16px;
     line-height: 150%;
     color: #4d5053;
+    padding: 0 25px 25px;
 }
 
 .cta {
@@ -562,7 +572,8 @@
 }
 
 .footer-container {
-    gap: 60px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-logo {
