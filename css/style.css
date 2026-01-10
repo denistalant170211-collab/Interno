@@ -1,5 +1,6 @@
+
 .container {
-    width: 1230px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -9,15 +10,7 @@
 .header {
     padding-top: 26px;
     padding-bottom: 18px;
-}
-
-.header-link-home {
-    font-family: "Jost";
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    color: #cda274;
+    background-color: #fff;
 }
 
 .header-container {
@@ -26,34 +19,68 @@
     justify-content: space-between;
 }
 
+.header-logo {
+    height: 50px;
+}
+
 .header-list {
     display: flex;
     gap: 40px;
+    align-items: center;
 }
 
-.hero-container {
-    display: flex;
-    flex-direction: column;
+.header-link-home {
+    font-family: "Jost";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #cda274;
 }
-
 
 .header-link {
     font-family: "Jost";
     font-weight: 400;
     font-size: 19px;
     line-height: 158%;
-    letter-spacing: 0.02em;
     color: #292f36;
+}
+
+.hero {
+    padding: 150px 0;
+    background-image: url('/img/Interior-hero.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f8f6f4;
+    position: relative;
+    min-height: 100px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 500px;
+    padding-left: 50px;
 }
 
 .hero-title {
     font-family: "DM Serif Display";
     font-weight: 400;
-    font-size: 80px;
-    line-height: 120%;
-    letter-spacing: 0em;
+    font-size: 65px;
+    line-height: 110%;
     color: #292f36;
-    margin-bottom: 19px;
+    margin-bottom: 25px;
 }
 
 .hero-text {
@@ -61,34 +88,33 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: #4d5053;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
+    max-width: 480px;
 }
 
 .hero-button {
     font-family: "Jost";
-    font-weight: 400;
+    font-weight: 600;
     font-size: 18px;
     line-height: 150%;
-    letter-spacing: 0.04em;
     color: #fff;
-    width: 207px;
-    height: 71px;
+    padding: 20px 40px;
     background-color: #292F36;
     border-radius: 18px;
-    border-style: none;
+    border: none;
+    align-self: flex-start;
 }
 
-.hero {
-    padding-bottom: 100px;
-    padding-top: 18px;
+.service {
+    padding: 100px 0;
+    background-color: #fff;
 }
 
 .service-list {
     display: flex;
     justify-content: space-between;
-    gap: 90px;
+    gap: 60px;
 }
 
 .service-item {
@@ -96,7 +122,9 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    max-width: 360px;
+    flex: 1;
+    text-align: center;
+    padding: 20px;
 }
 
 .service-title {
@@ -105,7 +133,6 @@
     font-size: 25px;
     line-height: 156%;
     letter-spacing: 0.01em;
-    text-align: center;
     color: #292f36;
 }
 
@@ -115,7 +142,6 @@
     font-size: 22px;
     line-height: 150%;
     letter-spacing: 0.01em;
-    text-align: center;
     color: #4d5053;
 }
 
@@ -125,46 +151,37 @@
     font-size: 18px;
     line-height: 150%;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #4d5053;
-    display: flex;
+    text-decoration: none;
+    display: inline-flex;
     align-items: center;
     gap: 10px;
 }
 
-
-.service {
-    padding-bottom: 100px;
-    padding-top: 100px;
+.about {
+    padding: 100px 0;
+    background-color: #fff;
 }
 
 .about-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    gap: 80px;
 }
 
 .about-content {
-    max-width: 552px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 47px;
-}
-
-.about-phone-block {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    flex: 1;
+    max-width: 500px;
 }
 
 .about-title {
     font-family: "DM Serif Display";
     font-weight: 400;
     font-size: 50px;
-    line-height: 130%;
-    letter-spacing: 0em;
+    line-height: 125%;
     color: #292f36;
-    margin-bottom: 42px;
+    margin-bottom: 30px;
 }
 
 .about-text {
@@ -174,17 +191,30 @@
     line-height: 150%;
     letter-spacing: 0.01em;
     color: #4d5053;
-    margin-bottom: 46px;
+    margin-bottom: 50px;
 }
 
+.about-contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.about-phone-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 .about-phone {
-    font-family: "Jost";
-    font-weight: 400;
+    font-family: "DM Serif Display";
+    font-weight: 700;
     font-size: 24px;
     line-height: 150%;
-    letter-spacing: 0.01em;
-    color: #4d5053;
+    color: #cda274;
 }
 
 .about-call {
@@ -192,101 +222,118 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: #4d5053;
 }
 
 .about-button {
     font-family: "Jost";
-    font-weight: 400;
+    font-weight: 600;
     font-size: 18px;
     line-height: 150%;
-    letter-spacing: 0.04em;
     color: #fff;
-    width: 263px;
-    height: 71px;
+    padding: 22px 45px;
     background-color: #292F36;
     border-radius: 18px;
-    border-style: none;
-    margin-top: 10px;
+    border: none;
 }
 
 .about-image-wrap {
-    max-width: 592px;
-}
-
-.about {
-    padding-bottom: 139.39px;
-    padding-top: 100px;
+    max-width: 550px;
 }
 
 .about-image {
-    border-radius: 0 326px 0 123px;
-    width: 592px;
-    height: 635px;
+    width: 100%;
+    height: 600px;
+    border-radius: 0 300px 0 120px;
+    background-color: #e8e4df;
+}
+
+.testimonials {
+    background-color: #F4F0EC;
+    border-radius: 70px;
+    padding: 88px 60px;
+    margin: 0 auto 150px;
+    max-width: 1200px;
+}
+
+.testimonials-container {
+    max-width: 100%;
 }
 
 .testimonials-title {
     font-family: "DM Serif Display";
     font-weight: 400;
-    font-size: 45px;
-    line-height: 130%;
-    letter-spacing: 0em;
+    font-size: 50px;
+    line-height: 125%;
     text-align: center;
     color: #292f36;
+    margin-bottom: 80px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.testimonials {
-    border-radius: 70px;
-    width: 1200px;
-    height: 675px;
-    background-color: #F4F0EC;
-    padding-bottom: 140.61px;
-    padding-top: 139.39px;
-    padding: 88px 24px;
-}
-
-.testimonials-header {
-    margin-bottom: 25px;
-}
-
-
-.testimonials-list {
-    width: 354px;
-    height: 287px;
-    background-color: #FFFFFF;
+.testimonials-container > ul {
     display: flex;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
 }
 
 .testimonials-item {
-    width: 354px;
+    max-width: 340px;
     background-color: #fff;
     border-radius: 30px;
-    padding: 45px 35px;
-    display: flex;
-    flex-direction: column;
+    padding: 50px 35px;
 }
 
+.testimonials-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.testimonials-header::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e8e4df;
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonials-item:nth-child(1) .testimonials-header::before {
+    background-image: url('/img/Lisa.webp');
+}
+
+.testimonials-item:nth-child(2) .testimonials-header::before {
+    background-image: url('/img/David.webp');
+}
+
+.testimonials-item:nth-child(3) .testimonials-header::before {
+    background-image: url('/img/Lisa_Clairton.webp');
+}
+
+.testimonials-header > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
 
 .testimonials-name {
     font-family: "DM Serif Display";
     font-weight: 400;
     font-size: 25px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: #292f36;
-    margin-bottom: 5px;
 }
-
 
 .testimonials-location {
     font-family: "Jost";
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: #4d5053;
 }
 
@@ -295,28 +342,36 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: #4d5053;
 }
 
-.partners-image {
-    width: 1200px;
-    height: 103px;
+.partners {
+    padding: 0 0 100px;
 }
 
-.partners {
-    padding-bottom: 100px;
-    padding-top: 140.61px;
+.partners-container {
+    display: flex;
+    justify-content: center;
+}
+
+.partners-image {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+.project {
+    padding: 100px 0;
 }
 
 .project-title {
     font-family: "DM Serif Display";
     font-weight: 400;
-    font-size: 47px;
-    line-height: 133%;
-    letter-spacing: 0em;
+    font-size: 50px;
+    line-height: 130%;
     text-align: center;
     color: #292f36;
+    margin-bottom: 15px;
 }
 
 .project-text {
@@ -324,15 +379,28 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     text-align: center;
     color: #4d5053;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.project-list {
+    gap: 50px;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
 }
 
 .project-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
     border-radius: 0 80px 0 0;
-    width: 590px;
-    height: 661px;
 }
 
 .project-name {
@@ -340,7 +408,6 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 156%;
-    letter-spacing: 0.01em;
     color: #292f36;
 }
 
@@ -349,29 +416,33 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: #4d5053;
-}
-
-.project {
-    padding-bottom: 79.98px;
-    padding-top: 100px;
 }
 
 .stats {
     background-color: #F4F0EC;
-    padding-bottom: 150px;
-    padding-top: 79.98px;
+    padding: 150px 0;
+}
+
+.stats-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.stats-item {
+    text-align: center;
 }
 
 .stats-number {
     font-family: "DM Serif Display";
     font-weight: 400;
     font-size: 85px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    text-align: center;
+    line-height: 120%;
     color: #cda274;
+    margin-bottom: 10px;
 }
 
 .stats-text {
@@ -379,19 +450,21 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
-    text-align: center;
     color: #4d5053;
+}
+
+.blog {
+    padding: 100px 0;
 }
 
 .blog-title {
     font-family: "DM Serif Display";
     font-weight: 400;
-    font-size: 48px;
+    font-size: 50px;
     line-height: 130%;
-    letter-spacing: 0em;
     text-align: center;
     color: #292f36;
+    margin-bottom: 15px;
 }
 
 .blog-text {
@@ -399,14 +472,27 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     text-align: center;
     color: #4d5053;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.blog-list {
+    gap: 30px;
+}
+
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .blog-image {
-    width: 344px;
-    height: 296px;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 45px 0 45px 0;
 }
 
 .blog-name {
@@ -423,12 +509,23 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: #4d5053;
 }
 
-.blog {
-    padding-bottom: 80.22px;
+.cta {
+    background-color: #292F36;
+    border-radius: 70px;
+    padding: 80px 60px;
+    margin: 100px auto;
+    max-width: 1200px;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
 }
 
 .cta-title {
@@ -436,8 +533,6 @@
     font-weight: 400;
     font-size: 50px;
     line-height: 150%;
-    letter-spacing: 0em;
-    text-align: center;
     color: #fff;
 }
 
@@ -446,32 +541,33 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
-    text-align: center;
     color: #fff;
+    margin-bottom: 20px;
 }
 
 .cta-button {
     font-family: "Jost";
-    font-weight: 400;
+    font-weight: 600;
     font-size: 18px;
     line-height: 150%;
-    letter-spacing: 0.01em;
-    text-align: center;
-    color: #fff;
+    color: #292f36;
     background-color: #CDA274;
-    width: 241px;
-    height: 71px;
+    padding: 22px 45px;
     border-radius: 18px;
-    border-style: none;
+    border: none;
 }
 
-.cta {
-    border-radius: 70px;
-    width: 1200px;
-    height: 414px;
-    background-color: #292F36;
-    padding-bottom: 79.8px;
+.footer {
+    padding: 80px 0 40px;
+}
+
+.footer-container {
+    gap: 60px;
+}
+
+.footer-logo {
+    height: 45px;
+    margin-bottom: 20px;
 }
 
 .footer-text {
@@ -479,8 +575,8 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: #4d5053;
+    max-width: 350px;
 }
 
 .footer-title {
@@ -488,8 +584,14 @@
     font-weight: 400;
     font-size: 25px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: #292f36;
+    margin-bottom: 20px;
+}
+
+.footer-pages,.footer-explore {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .footer-link {
@@ -497,8 +599,15 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: #4d5053;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .footer-address {
@@ -506,7 +615,6 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: #4d5053;
     font-style: normal;
 }
@@ -516,8 +624,9 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: #4d5053;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .footer-phone {
@@ -525,6 +634,5 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: #4d5053;
 }
