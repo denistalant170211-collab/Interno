@@ -46,7 +46,7 @@
 
 .hero {
     padding: 150px 0;
-    background-image: url('/img/interior-hero.webp');
+    background-image: url('/img/Interior-hero.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -307,15 +307,15 @@
 }
 
 .testimonials-item:nth-child(1) .testimonials-header::before {
-    background-image: url('/img/lisa.webp');
+    background-image: url('/img/Lisa.webp');
 }
 
 .testimonials-item:nth-child(2) .testimonials-header::before {
-    background-image: url('/img/david.webp');
+    background-image: url('/img/David.webp');
 }
 
 .testimonials-item:nth-child(3) .testimonials-header::before {
-    background-image: url('/img/lisa_clairton.webp');
+    background-image: url('/img/Lisa_Clairton.webp');
 }
 
 .testimonials-header>div {
