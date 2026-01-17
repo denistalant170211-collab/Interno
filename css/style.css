@@ -307,15 +307,15 @@
 }
 
 .testimonials-item:nth-child(1) .testimonials-header::before {
-    background-image: url('/img/Lisa.webp');
+    background-image: url('./img/lisa.webp');
 }
 
 .testimonials-item:nth-child(2) .testimonials-header::before {
-    background-image: url('/img/David.webp');
+    background-image: url('./img/David.webp');
 }
 
 .testimonials-item:nth-child(3) .testimonials-header::before {
-    background-image: url('/img/Lisa_Clairton.webp');
+    background-image: url('./img/Lisa_Clairton.webp');
 }
 
 .testimonials-header>div {
