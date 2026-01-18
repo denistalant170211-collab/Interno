@@ -44,9 +44,14 @@
     color: #292f36;
 }
 
+.header-link:hover {
+    color: #CDA274;
+    transition: 0.5s;
+}
+
 .hero {
     padding: 150px 0;
-    background-image: url('/img/Interior-hero.webp');
+    background-image: url('/img/interior-hero.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -311,11 +316,11 @@
 }
 
 .testimonials-item:nth-child(2) .testimonials-header::before {
-    background-image: url('./img/David.webp');
+    background-image: url('../img/david.webp');
 }
 
 .testimonials-item:nth-child(3) .testimonials-header::before {
-    background-image: url('./img/Lisa_Clairton.webp');
+    background-image: url('../img/lisa_clairton.webp');
 }
 
 .testimonials-header>div {
@@ -630,6 +635,11 @@
     transition: color 0.3s;
 }
 
+.footer-link:hover {
+    color: #CDA274;
+    transition: 0.5s;
+}
+
 .footer-contact {
     display: flex;
     flex-direction: column;
@@ -661,4 +671,9 @@
     font-size: 22px;
     line-height: 150%;
     color: #4d5053;
+}
+
+.footer-address:hover,.footer-phone:hover,.footer-email:hover {
+    color: #CDA274;
+    transition: 0.5s;
 }
